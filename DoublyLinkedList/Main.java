@@ -1,3 +1,5 @@
+package DoublyLinkedList;
+
 import java.util.Scanner;
 
 public class Main {
@@ -25,37 +27,41 @@ public class Main {
                     value = scanner.nextInt();
                     doublyLinkedList.insert(value);
                 }
-                    break;
+                break;
 
                 case 2: {
                     doublyLinkedList.delete();
                 }
-                    break;
+                break;
+
                 case 3: {
                     System.out.println("Enter an value : ");
                     value = scanner.nextInt();
 
                     doublyLinkedList.search(value);
                 }
-                    break;
+                break;
+
                 case 4: {
                     doublyLinkedList.display();
                 }
+                break;
 
-                    break;
                 case 5: {
                     doublyLinkedList.length();
                 }
+                break;
 
-                    break;
+                case 6: {
+                    takeInput = false;
+                }
+                break;
 
                 default: {
                     System.out.println("Invalid choice");
                 }
-
-                    break;
+                break;
             }
-
         }
         scanner.close();
     }

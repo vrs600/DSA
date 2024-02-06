@@ -1,3 +1,5 @@
+package DoublyLinkedList;
+
 public class DoublyLinkedList {
     DoublyNode head;
 
@@ -17,12 +19,12 @@ public class DoublyLinkedList {
             // node already exist
             DoublyNode tmp = head;
 
-            while (tmp != null) {
+            while (tmp.next != null) {
                 tmp = tmp.next;
             }
 
-            node.previous = tmp.next;
             tmp.next = node.previous;
+            node.previous = tmp.next;
 
             System.out.println("Node inserted at the end");
         }
@@ -38,7 +40,7 @@ public class DoublyLinkedList {
         }
         DoublyNode tmp = head;
 
-        while (tmp != null) {
+        while (tmp.next != null) {
             System.out.println(" <== " + tmp.data + " ==> ");
             tmp = tmp.next;
         }

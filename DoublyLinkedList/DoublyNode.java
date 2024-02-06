@@ -1,3 +1,5 @@
+package DoublyLinkedList;
+
 public class DoublyNode {
     DoublyNode previous;
     int data;
